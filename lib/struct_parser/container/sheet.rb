@@ -48,7 +48,7 @@ module StructParser
     def assign_cell_squad(squad)
       # Default action is before_children
       squad = { before_children: squad } unless squad.is_a? Hash
-      squad = IUtils.flatten_val squad
+      squad = StructParser::Utils.flatten_val squad
       rows.each do |row|
         row.children.each do |cell|
           cell.op_squad = squad
@@ -59,7 +59,7 @@ module StructParser
 
     def assign_row_squad(squad)
       squad = { after_children: squad } unless squad.is_a? Hash
-      squad = IUtils.flatten_val squad
+      squad = StructParser::Utils.flatten_val squad
       rows.each do |row|
         row.op_squad = squad
       end
@@ -68,7 +68,7 @@ module StructParser
 
     def assign_col_squad(squad)
       squad = { after_children: squad } unless squad.is_a? Hash
-      squad = IUtils.flatten_val squad
+      squad = StructParser::Utils.flatten_val squad
       cols.each do |col|
         col.op_squad = squad
       end
