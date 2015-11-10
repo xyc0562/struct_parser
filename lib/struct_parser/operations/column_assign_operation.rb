@@ -1,5 +1,5 @@
 module StructParser::Operations
-  class ColumnAssignOperation < Operation
+  class ColumnAssignOperation < StructParser::Operation
     def initialize(options={})
       super options
       @col = options[:col]

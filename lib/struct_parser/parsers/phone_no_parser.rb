@@ -1,5 +1,5 @@
 module StructParser::Parsers
-  class PhoneNoParser < Parser
+  class PhoneNoParser < StructParser::Parser
     def initialize(options={})
       super options
     end

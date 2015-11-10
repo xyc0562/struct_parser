@@ -1,5 +1,5 @@
 module StructParser::Operations
-  class DbIdOperation < Operation
+  class DbIdOperation < StructParser::Operation
     attr_accessor :options
 
     # +model+ is an active record class such as Student

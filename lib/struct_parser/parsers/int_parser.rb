@@ -1,5 +1,5 @@
 module StructParser::Parsers
-  class IntParser < Parser
+  class IntParser < StructParser::Parser
 
     def sub_filters
       [

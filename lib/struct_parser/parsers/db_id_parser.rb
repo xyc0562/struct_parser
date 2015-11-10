@@ -1,6 +1,6 @@
 module StructParser::Parsers
   # Determine id of a row in DB table based on column values of that table
-  class DbIdParser < Parser
+  class DbIdParser < StructParser::Parser
 
     ##
     # options:

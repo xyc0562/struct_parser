@@ -1,6 +1,6 @@
 module StructParser::Parsers
   # Parser generator for mapped fields (typically values for selection or checkbox group)
-  class MapParser < Parser
+  class MapParser < StructParser::Parser
     def initialize(options={})
       @mapping = options.delete :mapping
       super options

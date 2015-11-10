@@ -1,5 +1,5 @@
 module StructParser::Guards
-  class HeaderGuard < Operation
+  class HeaderGuard < StructParser::Operation
     def initialize(*cols)
       options = cols.extract_options!
       super options

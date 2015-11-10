@@ -1,5 +1,5 @@
 module StructParser::Operations
-  class RowInsertOperation < Operation
+  class RowInsertOperation < StructParser::Operation
     # +model+ is an active record class such as Student
     # +id_group+ is an array of fields for identifying a row,
     #   because pk is unlikely available on a spreadsheet

@@ -1,10 +1,30 @@
+require 'struct_parser/operation_body'
+require 'struct_parser/operation'
+require 'struct_parser/container'
+require 'struct_parser/and'
+require 'struct_parser/exceptions'
+require 'struct_parser/parser'
+require 'struct_parser/utils'
+
+# Monkey patch core classes to behave like Operation
+require 'struct_parser/core_ext/proc'
+require 'struct_parser/core_ext/array'
+require 'struct_parser/core_ext/string'
+require 'struct_parser/core_ext/symbol'
+
+require 'struct_parser/containers/sequence'
+
+(Gem.find_files('struct_parser/guards/*.rb') +
+    Gem.find_files('struct_parser/operations/*.rb') +
+    Gem.find_files('struct_parser/parsers/*.rb') +
+    Gem.find_files('struct_parser/containers/*.rb')).each do |f|
+  require f
+end
+
+require 'struct_parser/classes'
+
 module StructParser
-  extend StructParser::Classes
-  # Monkey patch core classes to behave like Operation
-  require 'struct_parser/core_ext/proc'
-  require 'struct_parser/core_ext/array'
-  require 'struct_parser/core_ext/string'
-  require 'struct_parser/core_ext/symbol'
+  extend Classes
   class << self
     public
     def read_csv_category(paths, options={})

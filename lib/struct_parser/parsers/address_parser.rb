@@ -1,5 +1,5 @@
 module StructParser::Parsers
-  class AddressParser < Parser
+  class AddressParser < StructParser::Parser
     def initialize(options={})
       super options
     end

@@ -1,5 +1,5 @@
-module StructParser
-  class Container::Cell < Container
+module StructParser::Containers
+  class Cell < StructParser::Container
     attr_accessor :row, :col, :sheet
     def initialize(options={})
       @row = options.delete :row

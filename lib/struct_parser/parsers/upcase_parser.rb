@@ -1,6 +1,6 @@
 module StructParser::Parsers
   # Parser generator for mapped fields (typically values for selection or checkbox group)
-  class UpcaseParser < Parser
+  class UpcaseParser < StructParser::Parser
 
     def initialize(options={})
       super options

@@ -1,5 +1,5 @@
-module StructParser
-  class Container::Sequence < Container
+module StructParser::Containers
+  class Sequence < StructParser::Container
     attr_accessor :idx
     def initialize(options={})
       self.idx = options.delete :idx

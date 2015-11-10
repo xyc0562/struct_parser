@@ -1,5 +1,5 @@
 module StructParser::Parsers
-  class EmailParser < Parser
+  class EmailParser < StructParser::Parser
 
     def sub_filters
       [

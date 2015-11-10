@@ -1,5 +1,5 @@
-module StructParser
-  class Container::Category < Container
+module StructParser::Containers
+  class Category < StructParser::Container
     def assign_cell_squad(squad)
       children.each do |s|
         s.assign_cell_squad squad

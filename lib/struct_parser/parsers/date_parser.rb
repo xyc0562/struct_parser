@@ -1,5 +1,5 @@
 module StructParser::Parsers
-  class DateParser < Parser
+  class DateParser < StructParser::Parser
     def initialize(options={})
       super options
       @format = options.delete :format

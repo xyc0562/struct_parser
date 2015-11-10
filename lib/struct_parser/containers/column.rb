@@ -1,5 +1,5 @@
-module StructParser
-  class Container::Column < Container::Sequence
+module StructParser::Containers
+  class Column < StructParser::Containers::Sequence
     def run
       begin
         super

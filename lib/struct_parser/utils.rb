@@ -51,7 +51,7 @@ module StructParser::Utils
 
     def col_ops(*tuples)
       tuples.map do |tuple|
-        StructParser::Guard::HeaderGuard.new(tuple[0]).plus(*tuple[1..-1])
+        StructParser::Guards::HeaderGuard.new(tuple[0]).plus(*tuple[1..-1])
       end
     end
 

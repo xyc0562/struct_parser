@@ -1,5 +1,5 @@
-module StructParser
-  class Container::Row < Container::Sequence
+module StructParser::Containers
+  class Row < StructParser::Containers::Sequence
     ##
     # Assuming first row to be header, this may need to change
     def is_header?

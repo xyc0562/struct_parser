@@ -1,5 +1,5 @@
 module StructParser::Parsers
-  class CurrencyParser < Parser
+  class CurrencyParser < StructParser::Parser
     def initialize(options={})
       super options
     end
