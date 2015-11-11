@@ -9,9 +9,10 @@ Gem::Specification.new do |s|
   s.version     = StructParser::VERSION
   s.authors     = ["Yecheng Xu"]
   s.email       = ["xyc0562@gmail.com"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of StructParser."
-  s.description = "TODO: Description of StructParser."
+  s.homepage    = "https://github.com/xyc0562/struct_parser"
+  s.summary     = "Parse & operate on structured data"
+  s.description = "This Gem Provides a systematic approach to parsing structured data (especially CSV files) through usage " +
+      "of callback functions."
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
